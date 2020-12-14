@@ -1,0 +1,9 @@
+<h1> <%= @dog.name %></h1><br>
+<h2><%= @dog.breed %></h2>
+<h2> <%= @dog.age %></h2>
+
+<h2> Owners </h2>
+<% @dog.employees.map do|employee| %>
+ <%= employee.first_name %> 
+ <%= employee.last_name%> <br>
+<% end %>
